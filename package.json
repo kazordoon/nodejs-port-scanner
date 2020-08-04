@@ -1,0 +1,23 @@
+{
+  "name": "@kazordoon/port-scanner",
+  "version": "0.0.1",
+  "description": "Simple port scanner",
+  "main": "lib/PortScanner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazordoon/nodejs-port-scanner.git"
+  },
+  "keywords": [
+    "port-scanner",
+    "net"
+  ],
+  "author": "Felipe Barros <felipetech@tuta.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazordoon/nodejs-port-scanner/issues"
+  },
+  "homepage": "https://github.com/kazordoon/nodejs-port-scanner#readme"
+}
