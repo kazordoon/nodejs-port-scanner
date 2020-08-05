@@ -13,7 +13,7 @@ ports.forEach(async (port) => {
 });
 
 const showResolvedPromisesWhenReady = setInterval(() => {
-  if (promises.length > 0) {
+  if (promises.length === ports.length) {
     Promise.all(promises).then(console.log);
     clearInterval(showResolvedPromisesWhenReady);
   }
