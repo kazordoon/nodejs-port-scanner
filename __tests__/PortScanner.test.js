@@ -75,5 +75,20 @@ describe('PortScanner', () => {
         assert.deepStrictEqual(expected, actual);
       }
     });
+
+    it('when a negative number is provided as a timeout', async () => {
+      const timeout = -1;
+      const expected = `The value of "msecs" is out of range. It must be a non-negative finite number. Received ${timeout}`;
+
+      try {
+        const portScanner = new PortScanner();
+        portScanner.timeout = timeout;
+
+        await portScanner.getPortStatus(defaultPort, defaultHost);
+      } catch (err) {
+        const actual = err.message;
+        assert.deepStrictEqual(expected, actual);
+      }
+    });
   });
 });
