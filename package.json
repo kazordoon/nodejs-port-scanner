@@ -4,7 +4,8 @@
   "description": "Simple port scanner",
   "main": "lib/PortScanner.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha __tests__/**/*.{test,spec}.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/kazordoon/nodejs-port-scanner/issues"
   },
-  "homepage": "https://github.com/kazordoon/nodejs-port-scanner#readme"
+  "homepage": "https://github.com/kazordoon/nodejs-port-scanner#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1",
+    "nyc": "^15.1.0"
+  }
 }
