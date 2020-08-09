@@ -1,6 +1,6 @@
 {
   "name": "@kazordoon/port-scanner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple port scanner",
   "main": "lib/PortScanner.js",
   "scripts": {
