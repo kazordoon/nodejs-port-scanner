@@ -1,10 +1,16 @@
 const assert = require('assert');
 const net = require('net');
+const getPort = require('get-port');
 const PortScanner = require('../lib/PortScanner');
 
 describe('PortScanner', () => {
-  const defaultPort = 5050;
-  const defaultHost = '127.0.0.1';
+  let defaultPort;
+  let defaultHost;
+
+  before(async () => {
+    defaultPort = await getPort();
+    defaultHost = '127.0.0.1';
+  });
 
   it('should be defined', () => {
     assert.ok(PortScanner);
