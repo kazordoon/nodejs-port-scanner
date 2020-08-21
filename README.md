@@ -1,5 +1,7 @@
 # nodejs-port-scanner
-[![kazordoon](https://circleci.com/gh/kazordoon/nodejs-port-scanner.svg?style=svg)](https://circleci.com/gh/kazordoon/nodejs-port-scanner)
+[![npm version](https://badge.fury.io/js/%40kazordoon%2Fport-scanner.svg)](https://badge.fury.io/js/%40kazordoon%2Fport-scanner)
+
+[![kazordoon](https://circleci.com/gh/kazordoon/nodejs-port-scanner.svg?style=svg)](https://circleci.com/gh/kazordoon/nodejs-port-scanner)  
 
 Simple port scanner made with Node.js and the native net module.
 
