@@ -5,7 +5,8 @@
   "main": "lib/PortScanner.js",
   "scripts": {
     "test": "mocha __tests__/**/*.{test,spec}.js",
-    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test"
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
+    "test:codecov": "nyc npm test --report lcovonly -- -R spec && codecov"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "get-port": "^5.1.1",
     "mocha": "^8.1.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "codecov": "^3.7.2"
   }
 }
