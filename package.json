@@ -23,7 +23,7 @@
   "homepage": "https://github.com/kazordoon/nodejs-port-scanner#readme",
   "devDependencies": {
     "get-port": "^5.1.1",
-    "mocha": "^8.1.1",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0"
   }
 }
