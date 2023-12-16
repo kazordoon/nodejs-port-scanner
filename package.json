@@ -4,7 +4,7 @@
   "description": "Simple port scanner",
   "main": "lib/PortScanner.js",
   "scripts": {
-    "test": "mocha __tests__/**/*.{test,spec}.js",
+    "test": "mocha lib/**/*.{test,spec}.js",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm test"
   },
   "repository": {
